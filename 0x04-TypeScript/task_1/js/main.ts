@@ -12,7 +12,7 @@ interface Director extends Teacher {
 }
 
 interface printTeacherFunction {
-    (teacher: { firstName: string; lastName: string }): string;
+    (firstName: string, lastName: string): string;
 }
 
 const teacher3: Teacher = {
