@@ -52,7 +52,7 @@ function printTeacher({ firstName, lastName }) {
 
 console.log(printTeacher({firstName:"Francis", lastName:"Gitau"}));
 
-class StudentClass implements StudentInterface {
+class StudentClass {
   firstName: string;
   lastName: string;
 
