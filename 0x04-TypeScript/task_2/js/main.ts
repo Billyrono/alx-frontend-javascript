@@ -46,7 +46,6 @@ function createEmployee(salary: number | string): Director | Teacher {
   return new Director();
 }
 
-
 const employee1 = createEmployee(200);
 console.log(employee1 instanceof Teacher ? "Teacher" : "Director");
 
@@ -55,3 +54,15 @@ console.log(employee2 instanceof Teacher ? "Teacher" : "Director");
 
 const employee3 = createEmployee("$500");
 console.log(employee3 instanceof Teacher ? "Teacher" : "Director");
+
+type Subjects = 'Math' | 'History';
+
+export function teachClass(todayClass: Subjects): string {
+  if (todayClass === 'Math') {
+    return 'Teaching Math';
+  } else if (todayClass === 'History') {
+    return 'Teaching History';
+  }
+}
+console.log(teachClass(`Math`));
+console.log(teachClass(`History`));
